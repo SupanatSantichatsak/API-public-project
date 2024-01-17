@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Rick&Morty character</title>
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+</head>
+<body>
+    <div class="img-section">
+    <%if(locals.name){%>
+    <h1>Your character is</h1>
+    <p class="character-name"><%=name%></p>
+    <img class="img" src="<%=image%>" alt="Rick&Morty charecter">
+    <%}else{%>
+    <h1>Let's see who is your character</h1>
+    <h1>from Rick and Morty!!!</h1>
+    <img class="img" src="images/rick and morty.jpg" alt="Rick&Morty charecter">
+    <%}%>
+    </div>
+
+    <div class="btn-section">
+    <%if(locals.name){%>
+    <form method="post">
+        <input id="btn" type="submit" value="Try Again" formaction="/">
+    </form>
+    <%}else{%>
+    <form method="post">
+        <input id="btn" type="submit" value="Click" formaction="/">
+    </form>
+    <%}%>
+    </div>
+
+</body>
+</html>
