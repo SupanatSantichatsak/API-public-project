@@ -1,2 +1,4 @@
-# API-public-project
-use API public to create web
+How to run code
+1.open file in VScode
+2.run "npm i" in terminal
+3.run "node index.js"
